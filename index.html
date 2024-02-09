@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Day Wish for Swati</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('/chocolate.jpg') center/cover no-repeat; /* Replace 'chocolate.jpg' with the path to your image */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chocolate-wish {
+            font-size: 36px;
+            font-weight: bold;
+            color: #8b4513;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .chocolate-wish:hover {
+            color: #d2691e;
+            transform: scale(1.1);
+        }
+
+        .enter-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #d2691e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .enter-button:hover {
+            background-color: #8b4513;
+        }
+
+        .message-container {
+            display: none;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .message-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chocolate-wish">🍫 Happy Chocolate Day, Swati! 🍫</div>
+    <button class="enter-button" onclick="openMessage()">ENTER</button>
+
+    <div class="message-container" id="messageContainer">
+        <h2>Special Message for Swati</h2>
+        <p>Your presence in my life is sweeter than the finest chocolates. Wishing you a day filled with joy, love, and lots of delicious treats. Happy Chocolate Day!</p>
+        <!-- Add more content or customize the message as needed -->
+        <img src="/chocolate2.jpg" alt="Beautiful Message Image">
+    </div>
+
+    <script>
+        function openMessage() {
+            document.getElementById('messageContainer').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
